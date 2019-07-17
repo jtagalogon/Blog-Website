@@ -1,4 +1,4 @@
 # Shaq-With-a-K
 
 
-(Excluded settings.py)
+(Excluded shakville/settings.py)
