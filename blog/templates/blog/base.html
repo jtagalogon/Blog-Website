@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}ShaqpwithK blog{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Blog</h1>
+        <a href="/login">login</a> / <a href="/signup">signup</a> / <a href="/delete">delete user</a>
+        
+      <hr>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+  </body>
+</html>

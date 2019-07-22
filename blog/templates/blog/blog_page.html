@@ -1,0 +1,29 @@
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Page</title>
+  </head>
+  <body>
+    <h1>Blog Title Here</h1>
+    <div>
+      <button>
+          <a href="post/">Create new post</a>
+      </button>
+    </div>
+    <div class="blog">
+      {% for post in posts %}
+        <div class="blog">
+          <h2><a href="#">{{post.postTitle}}</a></h2>
+          <p>{{post.text}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
+{% endblock %}
+
+<!-- This is the template for /blogs. -->

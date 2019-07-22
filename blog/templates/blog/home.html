@@ -1,0 +1,10 @@
+{% extends 'blog/layout.html' %}
+{% block content %}
+  <h2>Welcome to the blog!</h2>
+
+  <p>You have successfully entered in the information</p>
+  <p>The name you entered was {{ loginname }}</p>
+
+  <a href="{% url 'base' %}">Logout</a>
+{% endblock %}
+
